@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/app.css">
+  <title>Dojo Chat</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <!-- START JOIN CHAT SECTION -->
+      <div class="row" id="join-chat">
+        <div class="my-5 col-md-4 offset-4">
+          <div class="card shadow">
+            <div class="card-header">
+              Enter Username to Join Chat
+            </div>
+            <div class="card-body">
+              <div id="error" class="alert alert-danger hide"></div>
+              <img class="mr-3 rounded-circle mx-auto d-block mb-3" width="128" height="128" id="random-user-img" src="" alt="You?">
+              <form id="join">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-info">Join</button>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END JOIN CHAT SECTION -->
+
+      <!-- START MAIN CHAT SECTION -->
+      <div class="row hide no-gutters my-5 row-eq-height shadow" id="chat">
+        <div class="col-md-9">
+          <div class="card" id="chat-box">
+            <div class="card-header">Welcome to the Dojo Chat!</div>
+            <div class="card-body">
+                <ul class="list-unstyled" id="chat-outlet">
+                  <li></li>
+                </ul>
+            </div>
+            <div class="card-footer">
+              <form id="chat-form">
+                <div class="input-group">
+                  <input type="text" required class="form-control" id="chat-input" placeholder="say something...">
+                  <div class="input-group-append">
+                    <button id="send-chat" type="submit" class="btn btn-secondary">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- END JOIN CHAT SECTION -->
+
+        <!-- START ACTIVE USERS SECTION -->
+        <div class="col-md-3">
+          <div class="card" id="users">
+            <div class="card-header">Active Users</div>
+            <div class="card-body">
+              <ul id="users-outlet" class="list-unstyled"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- END ACTIVE USERS SECTION -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./dist/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "dojo-app",
+  "version": "1.0.0",
+  "description": "Chat App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Dickerson",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "browserify": "^15.2.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-sass": "^3.1.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "babelify": "^8.0.0",
+    "bootstrap": "^4.0.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "socket.io": "^2.0.4"
+  }
+}

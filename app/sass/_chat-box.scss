@@ -1,0 +1,32 @@
+#chat-box {
+  .media {
+    padding: 1.2rem 0;
+
+    img {
+      max-height: 45px;
+    }
+
+    .media-body {
+
+      h6 {
+        color: $gray-90;
+        small {
+          color: $gray-40;
+          margin-left: .5rem;
+        }
+      }
+      line-height: .8rem;
+      color: $gray-60;
+    }
+  } 
+}
+
+#chat-outlet {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.card {
+  border-radius: 0;
+  height: 100%;
+}
