@@ -57,6 +57,7 @@ export class ChatService {
    * @param {[]} users 
    */
   addUsers(users) {
+    this.usersOutlet.innerHTML = '';
     users.forEach((user) => {
       this.usersOutlet.insertAdjacentHTML('beforeend', this.userTemplate(user));
     });
