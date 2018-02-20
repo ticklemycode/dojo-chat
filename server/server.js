@@ -73,7 +73,7 @@ io.on('connection', (socket) => {
       return false;
     }
 
-    usernames.splice(usernames.indexOf(socket.username), 1);
+    usernames = usernames.splice(usernames.indexOf(socket.username), 1);
     updateUsernames();
   });
 
