@@ -20,7 +20,7 @@ export class ChatService {
     /** Un-comment if running as a standalone service */
     
     // UPDATE IF IP CHANGES!!!!!!!!!!!!!!!
-    this.socket = io.connect('192.168.1.129:9000');
+    this.socket = io.connect('http://ticklemycode.io/');
     
     /** START for Express Server */
     // this.socket = io();
